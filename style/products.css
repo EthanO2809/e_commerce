@@ -259,3 +259,12 @@ nav {
   transition: all 0.8s ease-out;
   cursor: pointer;
 }
+
+.center {
+  text-align: center;
+}
+
+.nw {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

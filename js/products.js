@@ -16,42 +16,42 @@ closeCart.addEventListener("click", () => {
 let products = [
   {
     id: 1,
-    image: "https://i.postimg.cc/J0tVbr0j/Acer-Aspire-A5.png",
-    title: "Acer_Aspire",
+    image: "https://i.postimg.cc/5NDSYvTB/2021-hero-mobile-2.jpg",
+    title: "Lynx Gaming PC by Digital Storm",
     desc: "",
-    price: 6000,
+    price: 22000,
     instock: 1,
   },
   {
     id: 2,
-    image: "https://i.postimg.cc/nrKRjNYq/Lenovo-Idea-Pad-3.png",
-    title: "Lenovo-IdeaPad",
+    image: "https://i.postimg.cc/mgX1qFWc/CTA-768x768.png",
+    title: "DreamCore-h200tg gaming pc",
     desc: "",
-    price: 20000,
+    price: 16000,
     instock: 1,
   },
   {
     id: 3,
-    image: "https://i.postimg.cc/BQLXxDj7/Logitech-C270-HD-Webcam.png",
-    title: "Webcam",
+    image: "https://i.postimg.cc/cLrLv9PH/1678219621-player-prime-hero-primary-sm.png",
+    title: "NZXT-Pro Gaming Performance PC",
     desc: "",
-    price: 15000,
+    price: 29000,
     instock: 1,
   },
   {
     id: 4,
-    image: "https://i.postimg.cc/GtsdsFXk/Mavic-Drone-Different-Angle.jpg",
-    title: "Mavic-Drone",
+    image: "https://i.postimg.cc/5yDbL1h2/bre-single-pc-lr-plvgz8go5mpz8jdp2o92qi6lszkwbbfxflv3n580lw.jpg",
+    title: "STINCE-built Pro Gaming PC",
     desc: "",
-    price: 20000,
+    price: 25000,
     instock: 1,
   },
   {
     id: 5,
-    image: "https://i.postimg.cc/P5qhWnVX/Volkano-Zoom-700-Webcam.jpg",
-    title: "Webcam",
+    image: "https://i.postimg.cc/BnS4FhyD/antec-performance-1-ft.webp",
+    title: "ANTEC Gaming Performance PC+",
     desc: "",
-    price: 30000,
+    price: 42000,
     instock: 5,
   },
   
@@ -77,6 +77,8 @@ function renderProducts() {
             <button onClick="addToCart(${id})">Add to Cart</button>
         </div>
     </div>
+    <br>
+    <br>
         `;
 
     productsContainerEl.appendChild(productEl);
