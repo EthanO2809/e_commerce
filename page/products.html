@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/products.css" />
+
+    <title>Products</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_title">
+          <h1>products</h1>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/page/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/page/contact.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/page/products.html">Products</a>
+          </li>
+        </ul>
+        <div class="cart_items">
+          <h2 class="items"></h2>
+        </div>
+        <div class="nav_bag">
+          <p><i class="bx bx-shopping-bag"></i></p>
+        </div>
+      </nav>
+
+      <!-- cart section -->
+      <section>
+        <div class="cart_container">
+          <div class="cart_close_icon">
+            <p class="close_icon" id="close_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5rem"
+                height="1.5rem"
+                fill="currentColor"
+                class="catIcon"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+                />
+              </svg>
+            </p>
+          </div>
+
+          <div class="cart_container_title">
+            <h2 class="cart">Your Cart</h2>
+          </div>
+
+          <div class="cart_products"></div>
+
+          <div class="cartTotalPrice">
+            <h2 class="totalPrice"></h2>
+          </div>
+
+          <div class="clearCart">
+            <button class="btn_clear">Clear Cart</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <br />
+    <section>
+      <div class="products_title">
+        <h2 class="title">Our Products</h2>
+      </div>
+      <div class="products_container"></div>
+    </section>
+    <br />
+    <footer>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+    </footer>
+
+    <script src="../Js/products.js"></script>
+  </body>
+</html>
