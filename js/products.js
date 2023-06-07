@@ -54,40 +54,7 @@ let products = [
     price: 30000,
     instock: 5,
   },
-  {
-    id: 6,
-    image:
-      "https://i.postimg.cc/jjQcQ28m/Huawei-Band-7-Wilderness-Green-Silicone-Smartwatch.png",
-    title: "Huawei-Band",
-    desc: "",
-    price: 4000,
-    instock: 6,
-  },
-  {
-    id: 7,
-    image:
-      "https://i.postimg.cc/t47GcQ0B/Daniel-Klein-d-Smart-Blue-Plated-Silicone-Smartwatch.png",
-    title: "Daniel-Klein",
-    desc: "",
-    price: 50000,
-    instock: 6,
-  },
-  {
-    id: 8,
-    image: "https://i.postimg.cc/gjBNX7M0/Hauwei-Watch-Fit-2.png",
-    title: "Huawei-Watch",
-    desc: "",
-    price: 25000,
-    instock: 6,
-  },
-  {
-    id: 9,
-    image: "https://i.postimg.cc/nrKRjNYq/Lenovo-Idea-Pad-3.png",
-    title: "Lenovo-Idea-Pad",
-    desc: "",
-    price: 11000,
-    instock: 6,
-  },
+  
 ];
 function renderProducts() {
   productsContainerEl.innerHTML = "";
@@ -96,7 +63,7 @@ function renderProducts() {
     const productEl = document.createElement("div");
     productEl.innerHTML = `
         <div class="product">
-        <div class="product_img">
+        <div class="product_img card2">
             <img src="${image}" alt="${title}">
             </br>
         </div>

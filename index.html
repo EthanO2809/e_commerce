@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -22,140 +22,161 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
     <header>
-      <nav class="navbar bg p-2 m-2 navigation rounded-4">
+      <nav class="navbar navbar-dark bg-gradient size">
         <div class="container-fluid">
-          <h1 class="h-1 swift-up-text">Gadget world</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <a class="navbar-brand fs-1 colour" href="#">Gadget World</a>
+          <button class="navbar-toggler bg-gradient" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">NavBar</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="/page/about.html">About</a>
+                  <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="/page/contact.html">Contact us</a>
-                </li>
-                
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="/page/products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    products
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/page/products.html">product</a></li>
-                    <li><a class="dropdown-item" href="/page/cart.html">Cart</a></li>
-                  </ul>
+                  <a class="nav-link" href="#">Products</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-      </header>
+    </header>
 
-      <div class="wrapper">
-        <img src="https://i.postimg.cc/nL5SmF48/onur-binay-9j-LI9-Ux6-IFo-unsplash.jpg" alt="" class="img-0 img-fluid rounded-4">
+    <div class="wrapper home-banner">
+      <!-- <img src="https://i.postimg.cc/nL5SmF48/onur-binay-9j-LI9-Ux6-IFo-unsplash.jpg" alt="" class="img-0 img-fluid"> -->
+      <div class="header-text">
+        <h2 class="h-2">Gadget World</h2>
+        <p class="fs-4 text-white shad">Quality Gadgets for Quality Users</p>
       </div>
-      <hr>
-       
-      <div class="cards"> 
-      <div class="card">
-        <div class="cards-content">
-                
-           <center> <img src="https://i.postimg.cc/gjBNX7M0/Hauwei-Watch-Fit-2.png" class="img-1 img-fluid"></center>
-         
-          <h4 class="text-center h-4">Huawei Watch Fit 2</h4>
-          <p class="text-center">
-            R3 299,00
-        </p>
-          <a class="showmore text-decoration-none text-center" href="#">ReadMore</a>
+    </div>
+    <br>
+    <center>
+      <button
+        class="btn btn-success"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExample"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+       Click to view Items ↓
+      </button>
+    </center>
+    <!-- Content to be hidden -->
 
-        </div>
-        </div>
-        <div class="card">
-            <div class="cards-content">
-                    
-               <center> <img src="https://i.postimg.cc/J0tVbr0j/Acer-Aspire-A5.png" alt="" class="img-1"></center>
-    
-             
-              <h4 class="text-center h-4">Acer Aspire 5 i5 1335U 16GB RAM 512GB SSD Storage Laptop</h4>
-              <p class="text-center">
-                R14 999,00
-              </p>
-              <a class="showmore text-decoration-none text-center" href="#" >ReadMore</a>
-    
-            </div>
-            </div>
-            <div class="card">
-                <div class="cards-content">
-                        
-                    <center><img src="https://i.postimg.cc/BQLXxDj7/Logitech-C270-HD-Webcam.png" alt="" class="img-1"></center>
+    <div class="container p-3">
+      <div class="collapse" id="collapseExample">
+        <section class="hero-section">
+          <h1 class="text-white">Top Features</h1>
+          <div class="card-grid">
+            <a href="./page/products.html" class="card">
+              <div class="card__bg" style="background-image: url(https://i.postimg.cc/bNX2NKyY/pc-gaming-computer-pc-cases-technology-wallpaper-preview.jpg)"></div>
+              <div class="card__content">
+                <p class="card__category"><b>Category</b></p>
+                <h3 class="card__heading text-white">PC Range</h3>
+              </div>
+            </a>
         
-                 
-                  <h4 class="text-center h-4">Logitech C270 HD Webcam</h4>
-                  <p class="text-center">
-                    R649,00
-                  </p>
-                  <a class="showmore text-decoration-none text-center" href="#">ReadMore</a>
+            <a href="./page/products.html" class="card">
+              <div class="card__bg" style="background-image: url(https://i.postimg.cc/m2FJ7FWN/istockphoto-1248263998-170667a.webp)"></div>
+              <div class="card__content">
+                <p class="card__category"><b>Category</b></p>
+                <h3 class="card__heading text-white">Laptop Range</h3>
+              </div>
+            </a>
         
-                </div>
-                </div>
+            <a href="./page/products.html" class="card">
+              <div class="card__bg" style="background-image: url(https://i.postimg.cc/vmW6nh0F/xbox-series-x-s-console-hoyle-studio-promo-16.jpg)"></div>
+              <div class="card__content">
+                <p class="card__category"><b>Category</b></p>
+                <h3 class="card__heading text-white">Console Range</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+      
+
 
       </div>
-      <hr>
+    </div>
 
-      <footer class="rounded-4 bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-      
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
-        </div>
-      </footer>
-      
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://kit.fontawesome.com/95273b878a.js" crossorigin="anonymous"></script>
-</body>
+   
+    <hr />
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section>
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/95273b878a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

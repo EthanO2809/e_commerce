@@ -38,8 +38,6 @@ nav {
 
 .products_container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -211,4 +209,53 @@ nav {
 }
 .nav-link:hover {
   color: blue !important;
+}
+
+.card2 {
+  list-style: none;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+.card2__bg {
+  position: relative;
+  height: 50vh;
+  min-width: 250px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 1rem;
+  overflow: hidden;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+.card2__bg::after {
+  content: "";
+  background-image: linear-gradient(360deg, black, transparent);
+  height: 150px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.card2__content {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.card2__category {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #acacac;
+}
+.card2:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0px 0px 100px #acacac);
+}
+.card2-grid:hover > .card:not(:hover).card {
+  filter: brightness(0.8) grayscale(0.6) contrast(1.2) blur(10px);
+}
+.pointer {
+  list-style: none;
+  position: relative;
+  transition: all 0.8s ease-out;
+  cursor: pointer;
 }
