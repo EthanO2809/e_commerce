@@ -2,6 +2,7 @@ const cartEl = document.querySelector(".nav_bag");
 const cartContainer = document.querySelector(".cart_container");
 const closeCart = document.querySelector("#close_icon");
 const productsContainerEl = document.querySelector(".products_container");
+const laptopsContainerEl = document.querySelector(".laptop_Container");
 const cartProductEl = document.querySelector(".cart_products");
 const totalPriceEl = document.querySelector(".totalPrice");
 const cartItemsEl = document.querySelector(".items");
@@ -85,6 +86,9 @@ function renderProducts() {
   });
 }
 renderProducts();
+
+
+
 
 // get items from localStorage
 let cart = localStorage.getItem("cartItems")
